@@ -1,35 +1,86 @@
-# Gatsby Theme: Sky Lite Starter
+# gatsby-starter-newage
 
-A lightweight GatsbyJS starter with Material-UI and MDX Markdown support. This starter uses the `gatsby-theme-sky-lite` theme available at: https://github.com/vim-labs/gatsby-theme-sky-lite
+Gatsby.js V2 starter template based on New age by startbootstrap
 
-**View demo:**
-https://gatsby-theme-sky-lite.netlify.com
+For an overview of the project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/).
 
-## Install dependencies
+Check online preview [here](https://anubhavsrivastava.github.io/gatsby-starter-newage/)
 
-```bash
-yarn # Or, npm install
+## Screenshot
+
+![Screenshot](./src/assets/img/demo.png)
+
+## Install
+
+Make sure that you have the Gatsby CLI program installed:
+
+```sh
+npm install --global gatsby-cli
 ```
 
-## Start development server
+And run from your CLI:
 
-```bash
+```sh
+gatsby new <site-name> https://github.com/anubhavsrivastava/gatsby-starter-newage
+```
+
+Then you can run it by:
+
+```sh
+cd gatsby-example-site
+npm install
 gatsby develop
 ```
 
-## Empty cache
+### Personalization
 
-```bash
-gatsby clean
+Edit `config.js` to put up your details
+
+```javascript
+module.exports = {
+  siteTitle: 'Gatsby Starter Newage', // <title>
+  ...
+  heading: 'Gatsby Starter New age',
+};
+
 ```
 
-## Build static site
+### Deploying using Github page
 
-```bash
-gatsby build
-```
+`package.json` has a default script that uses `gh-pages` module to publish on Github pages. Simply running `npm run deploy` would publish the site on github pages.
 
-## Screenshots
+Additionally, it also has [path-prefix](https://www.gatsbyjs.org/docs/path-prefix/) value set for gatsby config in `config.js`. Change `pathPrefix` to relevant path if your gatsby site is hosted on subpath of a domain, `https://theanubhav.com/somePath/`. If you are hosting it as root site, i.e, `https://theanubhav.com/` , remove the pathPrefix configuration.
 
-![Screenshot 01](https://user-images.githubusercontent.com/25379378/69492728-f6e0e200-0e5a-11ea-9601-4d76414a792e.png)
-![Screenshot 02](https://user-images.githubusercontent.com/25379378/69492729-f6e0e200-0e5a-11ea-9508-94c69dff22e8.png)
+### Checkout other similar starters
+
+- [gatsby-starter-casual](https://github.com/anubhavsrivastava/gatsby-starter-casual)
+- [gatsby-starter-grayscale](https://github.com/anubhavsrivastava/gatsby-starter-grayscale)
+- [gatsby-starter-resume](https://github.com/anubhavsrivastava/gatsby-starter-resume)
+- [gatsby-starter-spectral](https://github.com/anubhavsrivastava/gatsby-starter-spectral)
+- [gatsby-starter-stylish](https://github.com/anubhavsrivastava/gatsby-starter-stylish)
+- [gatsby-starter-solidstate](https://github.com/anubhavsrivastava/gatsby-starter-solidstate)
+- [gatsby-starter-readonly](https://github.com/anubhavsrivastava/gatsby-starter-readonly)
+- [gatsby-starter-prologue](https://github.com/anubhavsrivastava/gatsby-starter-prologue)
+- [gatsby-starter-phantom](https://github.com/anubhavsrivastava/gatsby-starter-phantom)
+- [gatsby-starter-paradigmshift](https://github.com/anubhavsrivastava/gatsby-starter-paradigmshift)
+- [gatsby-starter-overflow](https://github.com/anubhavsrivastava/gatsby-starter-overflow)
+- [gatsby-starter-multiverse](https://github.com/anubhavsrivastava/gatsby-starter-multiverse)
+- [gatsby-starter-identity](https://github.com/anubhavsrivastava/gatsby-starter-identity)
+- [gatsby-starter-highlights](https://github.com/anubhavsrivastava/gatsby-starter-highlights)
+- [gatsby-starter-fractal](https://github.com/anubhavsrivastava/gatsby-starter-fractal)
+- [gatsby-starter-eventually](https://github.com/anubhavsrivastava/gatsby-starter-eventually)
+- [gatsby-starter-directive](https://github.com/anubhavsrivastava/gatsby-starter-directive)
+- [gatsby-starter-creative](https://github.com/anubhavsrivastava/gatsby-starter-creative)
+- [gatsby-starter-aerial](https://github.com/anubhavsrivastava/gatsby-starter-aerial)
+
+### Contribution
+
+Suggestions and PRs are welcome!
+
+Please create issue or open PR request for contribution.
+
+### License
+
+[![Open Source Love](https://badges.frapsoft.com/os/mit/mit.svg?v=102)](LICENSE)
+
+refer `LICENSE` file in this repository.
