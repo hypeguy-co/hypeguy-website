@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import config from '../../config';
 import Scroll from './Scroll';
+import demo1 from '../assets/images/demo-screen-1.jpg';
+
 export default class Header extends Component {
   constructor(props) {
     super(props);
@@ -34,14 +36,16 @@ export default class Header extends Component {
 
   render() {
     const { openMenu, visibilityClass } = this.state;
+    
     return (
+      <>
       <nav
         className={`navbar navbar-expand-lg navbar-light fixed-top ${visibilityClass}`}
         id="mainNav"
       >
         <div className="container">
           <a className="navbar-brand" href="#page-top">
-            {config.siteTitle}
+            {config.siteTitle} 
           </a>
           <button
             onClick={_ => this.toggleMenu(!openMenu)}
@@ -99,6 +103,38 @@ export default class Header extends Component {
           </div>
         </div>
       </nav>
+      <header className="masthead">
+        <div className="container h-100">
+          <div className="row h-100">
+            <div className="col-lg-7 my-auto">
+              <div className="header-content mx-auto">
+                <h1 className="mb-5">
+                  New Age is an gatsby starter for app landing page that will help
+                  you beautifully showcase your new mobile app, or anything else!
+                </h1>
+                <Scroll type="id" element="download">
+                  <a href="#download" className="btn btn-outline btn-xl">
+                    Start Now for Free!
+                  </a>
+                </Scroll>
+              </div>
+            </div>
+            <div className="col-lg-5 my-auto">
+              <div className="device-container">
+                <div className="device-mockup iphone6_plus portrait white">
+                  <div className="device">
+                    <div className="screen">
+                      <img src={demo1} className="img-fluid" alt="" />
+                    </div>
+                    <div className="button"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      </>
     );
   }
 }

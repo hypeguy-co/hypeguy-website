@@ -12,7 +12,7 @@ import astore from '../assets/images/app-store-badge.svg';
 
 const IndexPage = () => (
   <Layout>
-    <Header />
+    <Header title="Contato pau no seu cu"/>
 
     <section className="download bg-primary text-center" id="download">
       <div className="container">
